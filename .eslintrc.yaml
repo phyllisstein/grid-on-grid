@@ -1,0 +1,147 @@
+env:
+  browser: true
+  es6: true
+  node: true
+extends:
+  - standard
+  - plugin:ramda/recommended
+  - plugin:react/recommended
+parser: typescript-eslint-parser
+parserOptions:
+  ecmaFeatures:
+    experimentalObjectRestSpread: true
+    impliedStrict: true
+    jsx: true
+  ecmaVersion: 8
+  sourceType: module
+plugins:
+  - import
+  - node
+  - promise
+  - ramda
+  - react
+  - standard
+  - typescript
+rules:
+  react/jsx-closing-bracket-location:
+    - error
+    - after-props
+  react/jsx-curly-spacing:
+    - error
+    - children: true
+      spacing:
+        objectLiterals: never
+      when: always
+  react/jsx-sort-props:
+    - error
+    - callbacksLast: true
+      ignoreCase: true
+      reservedFirst: false
+      shorthandFirst: true
+  react/jsx-tag-spacing:
+    - warn
+    - closingSlash: never
+      beforeSelfClosing: always
+      afterOpening: never
+  react/no-find-dom-node: off
+  react/require-render-return: off
+  react/prop-types: off # TypeScript baby.
+
+  typescript/adjacent-overload-signatures: warn
+  typescript/class-name-casing: warn
+  typescript/explicit-function-return-type: off
+  typescript/explicit-member-accessibility: off
+  typescript/interface-name-prefix:
+    - warn
+    - never
+  typescript/member-delimiter-style:
+    - error
+    - delimiter: comma
+      requireLast: true
+      ignoreSingleLine: true
+  typescript/member-naming: off
+  typescript/member-ordering:
+    - warn
+    - interfaces: never
+      typeLiterals: never
+  typescript/no-angle-bracket-type-assertion: error
+  typescript/no-array-constructor: warn
+  typescript/no-empty-interface: off
+  typescript/no-explicit-any: off
+  typescript/no-namespace: warn
+  typescript/no-non-null-assertion: off
+  typescript/no-parameter-properties: off
+  typescript/no-triple-slash-reference: error
+  typescript/no-type-alias: off
+  typescript/no-unused-vars: off # Broken for type imports.
+  typescript/no-use-before-define: off # https://github.com/eslint/typescript-eslint-parser/issues/435
+  typescript/prefer-namespace-keyword: off
+  typescript/type-annotation-spacing: warn
+
+  comma-dangle:
+    - error
+    - arrays: always-multiline
+      exports: always-multiline
+      functions: always-multiline
+      imports: always-multiline
+      objects: always-multiline
+  eol-last: off
+  generator-star-spacing:
+    - error
+    - after: true
+      before: false
+      method: before
+  indent:
+    - error
+    - 2
+    - ArrayExpression: first
+      CallExpression:
+        arguments: first
+      FunctionDeclaration:
+        body: 1
+        parameters: first
+      FunctionExpression:
+        parameters: first
+        body: 1
+      MemberExpression: 1
+      ObjectExpression: first
+      outerIIFEBody: 1
+      SwitchCase: 1
+      VariableDeclarator:
+        const: 3
+        let: 2
+        var: 2
+  jsx-quotes:
+    - error
+    - prefer-single
+  max-len:
+    - warn
+    - 80
+    - ignoreComments: true
+      ignoreUrls: true
+      ignoreStrings: true
+      ignoreTemplateLiterals: true
+      ignoreRegExpLiterals: true
+  no-fallthrough: off
+  no-return-assign: off
+  no-trailing-spaces: off
+  no-undef: off # https://github.com/eslint/typescript-eslint-parser/issues/416
+  no-unused-vars: off # Broken for type imports.
+  no-use-before-define: off # https://github.com/eslint/typescript-eslint-parser/issues/416
+  sort-imports:
+    - error
+    - ignoreCase: true
+  sort-keys:
+    - warn
+    - asc
+    - caseSensitive: false
+      natural: true
+  space-infix-ops: off # Broken for parameterized types.
+  space-before-function-paren:
+    - error
+    - anonymous: never
+      asyncArrow: always
+      named: never
+  template-curly-spacing:
+    - error
+    - always

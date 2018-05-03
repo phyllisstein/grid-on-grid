@@ -1,5 +1,7 @@
 import 'normalize.css'
-import 'vendor/fonts/charlie/index.css'
+import 'prismjs/components'
+import 'prismjs/themes/prism-tomorrow.css'
+import 'styles/reset.css'
 import 'vendor/fonts/nort/index.css'
 import 'vendor/fonts/source-code-pro/index.css'
 import Promise from 'bluebird'

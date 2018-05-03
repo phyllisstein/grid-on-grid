@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  box-sizing: border-box;
+  font-feature-settings: 'kern', 'liga', 'clig';
+  font-kerning: auto;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-variant-ligatures: common-ligatures contextual;
+  text-rendering: optimizeLegibility;
+}
+
+em {
+  line-height: 0;
+}

@@ -1,3 +1,5 @@
+/* eslint-disable sort-keys, indent */
+
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
 const Config = require('webpack-chain')
 const { readFileSync } = require('fs')
@@ -136,6 +138,10 @@ client.resolve
   .modules
     .add('src')
     .add('node_modules')
+    .end()
+  .alias
+    .set('react', 'vendor/react')
+    .set('react-dom', 'vendor/react-dom')
 
 client
   .plugin('provide')

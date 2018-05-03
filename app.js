@@ -30,7 +30,6 @@ serve({
   hot: {
     host: '0.0.0.0',
     hot: true,
-    logLevel: 'silent',
   },
   logLevel: 'silent',
   port: typeof PhusionPassenger === 'undefined' ? PORT : 'passenger',

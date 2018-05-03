@@ -1,0 +1,486 @@
+defaultSeverity: warning
+extends:
+  - tslint:recommended
+  - tslint-react
+rulesDirectory:
+  - tslint-microsoft-contrib
+  - tslint-consistent-codestyle
+  - node_modules/tslint-sonarts/lib/rules
+  - node_modules/tslint-eslint-rules/dist/rules
+linterOptions:
+  exclude:
+    - '**/vendor/**'
+    - '**/node_modules/**'
+    - '**/*.d.ts'
+rules:
+  adjacent-overload-signatures: true
+  ban-types:
+    options:
+      - ['Object']
+      - ['{}']
+  member-access:
+    options:
+      - no-public
+  member-ordering:
+    options:
+      order:
+        - public-static-field
+        - public-static-method
+        - protected-static-field
+        - protected-static-method
+        - private-static-field
+        - private-static-method
+        - instance-field
+        - constructor
+        - instance-method
+  no-any: false
+  no-empty-interface: false
+  no-import-side-effect: false
+  no-inferrable-types:
+    options:
+      - ignore-params
+  no-internal-module: error
+  no-magic-numbers: true
+  no-namespace: error
+  no-non-null-assertion: false
+  no-parameter-reassignment: true
+  no-reference: error
+  no-unnecessary-type-assertion: true
+  no-var-requires: error
+  only-arrow-functions: false
+  prefer-for-of: true
+  promise-function-async: true
+  typedef: false
+  typedef-whitespace:
+    options:
+      -
+        call-signature: nospace
+        index-signature: nospace
+        parameter: nospace
+        property-declaration: nospace
+        variable-declaration: nospace
+      -
+        call-signature: space
+        index-signature: space
+        parameter: space
+        property-declaration: space
+        variable-declaration: space
+  await-promise: false
+  ban-comma-operator: true
+  ban: false
+  curly:
+    options:
+      - ignore-same-line
+  forin: true
+  import-blacklist: false
+  label-position: error
+  no-arg: true
+  no-bitwise: false
+  no-conditional-assignment: false
+  no-console: false
+  no-construct: error
+  no-debugger: error
+  no-duplicate-super: error
+  no-duplicate-switch-case: error
+  no-duplicate-variable:
+    options:
+      - check-parameters
+  no-dynamic-delete: true
+  no-empty:
+    options:
+      - allow-empty-catch
+  no-eval: error
+  no-floating-promises: true
+  no-for-in-array: error
+  no-implicit-dependencies: false
+  no-inferred-empty-object-type: true
+  no-invalid-template-strings: error
+  no-invalid-this:
+    options:
+      - check-function-in-method
+  no-misused-new: true
+  no-null-keyword: false
+  no-object-literal-type-assertion: true
+  no-return-await: error
+  no-shadowed-variable: error
+  no-sparse-arrays: false
+  no-string-literal: true
+  no-string-throw: error
+  no-submodule-imports:
+    options:
+      - app
+      - lib
+  no-switch-case-fall-through: false
+  no-this-assignment:
+    options:
+      - allow-destructuring
+  no-unbound-method: false
+  no-unnecessary-class:
+    options:
+      - allow-static-only
+  no-unsafe-any: true
+  no-unsafe-finally: true
+  no-unused-expression:
+    options:
+      - allow-fast-null-checks
+      - allow-new
+      - allow-tagged-template
+  no-unused-variable:
+    options:
+      - check-parameters
+      - ignore-pattern: ^_.+
+  no-var-keyword: error
+  no-void-expression:
+    options:
+      - ignore-arrow-function-shorthand
+  prefer-conditional-expression:
+    options:
+      - check-else-if
+  prefer-object-spread: true
+  radix: true
+  restrict-plus-operands: true
+  strict-boolean-expressions: true
+  strict-type-predicates: false
+  switch-default: error
+  triple-equals:
+    options:
+      - allow-null-check
+      - allow-undefined-check
+  use-default-type-parameter: true
+  use-isnan: true
+  cyclomatic-complexity: true
+  deprecation: true
+  eofline: true
+  indent: false
+  linebreak-style:
+    severity: error
+    options:
+      - LF
+  max-classes-per-file:
+    options:
+      - 1
+  max-file-line-count: false
+  max-line-length: false
+  no-default-export: false
+  no-duplicate-imports: true
+  no-mergeable-namespace: true
+  no-require-imports: true
+  object-literal-sort-keys:
+    severity: error
+    options:
+      - ignore-case
+      - shorthand-first
+  prefer-const:
+    options:
+      - all
+  prefer-readonly: true
+  trailing-comma:
+    severity: error
+    options:
+      - multiline: always
+        singleline: never
+  align: false
+  array-type:
+    options:
+      - array-simple
+  arrow-parens:
+    options:
+      - ban-single-arg-parens
+  arrow-return-shorthand:
+    options:
+      - multiline
+  binary-expression-operand-order: true
+  callable-types: false
+  class-name: true
+  comment-format:
+    options:
+      - check-space
+  completed-docs:
+    options:
+      - classes
+      - enums
+      - enum-members
+      - functions
+      - interfaces
+      - methods
+      - properties
+      - types
+  encoding: error
+  file-header: false
+  import-spacing: true
+  interface-name:
+    severity: error
+    options:
+      - never-prefix
+  interface-over-type-literal: false
+  jsdoc-format:
+    options:
+      - check-multiline-start
+  match-default-export-name: false
+  newline-before-return: false
+  newline-per-chained-call: false
+  new-parens: true
+  no-angle-bracket-type-assertion: true
+  no-boolean-literal-compare: true
+  no-consecutive-blank-lines:
+    options:
+      - 2
+  no-irregular-whitespace: true
+  no-parameter-properties: false
+  no-redundant-jsdoc: true
+  no-reference-import: error
+  no-trailing-whitespace: error
+  no-unnecessary-callback-wrapper: true
+  no-unnecessary-initializer: true
+  no-unnecessary-qualifier: true
+  number-literal-format: true
+  object-literal-key-quotes:
+    options:
+      - consistent-as-needed
+  object-literal-shorthand: true
+  one-line:
+    options:
+      - check-catch
+      - check-finally
+      - check-else
+      - check-open-brace
+      - check-whitespace
+  one-variable-per-declaration:
+    options:
+      - ignore-for-loop
+  ordered-imports: false
+  prefer-function-over-method: false
+  prefer-method-signature: false
+  prefer-switch: true
+  prefer-template: true
+  quotemark:
+    options:
+      - single
+      - jsx-single
+      - avoid-template
+      - avoid-escape
+  return-undefined: false
+  semicolon:
+    severity: error
+    options:
+      - never
+  space-before-function-paren:
+    options:
+      - anonymous: never
+        named: never
+        asyncArrow: always
+        method: never
+        constructor: never
+  space-within-parens: false
+  switch-final-break:
+    options:
+      - always
+  type-literal-delimiter: true
+  variable-name:
+    options:
+      - check-format
+      - allow-leading-underscore
+      - allow-pascal-case
+      - ban-keywords
+  whitespace:
+    options:
+      - check-branch
+      - check-decl
+      - check-operator
+      - check-module
+      - check-separator
+      - check-type
+      - check-typecast
+      - check-type-operator
+      - check-preblock
+  array-bracket-spacing:
+    options:
+      - never
+  block-spacing:
+    options:
+      - always
+  brace-style:
+    options:
+      - 1tbs
+      - allowSingleLine: true
+  handle-callback-err: true
+  no-constant-condition:
+    options:
+      - checkLoops: false
+  no-control-regex: true
+  no-empty-character-class: true
+  no-ex-assign: true
+  no-extra-boolean-cast: true
+  no-extra-semi: true
+  no-inner-declarations: true
+  no-invalid-regexp: true
+  no-multi-spaces: true
+  no-regex-spaces: true
+  no-unexpected-multiline: true
+  object-curly-spacing:
+    severity: error
+    options:
+      - always
+  sort-imports: false
+  # sort-imports:
+  #   severity: error
+  #   options:
+  #     - ignore-case
+  space-in-parens:
+    severity: error
+    options:
+      - never
+  ter-arrow-body-style:
+    options:
+      - as-needed
+  ter-arrow-parens:
+    options:
+      - as-needed
+      - requireForBlockBody: false
+  ter-arrow-spacing:
+    options:
+      - before: true
+        after: true
+  ter-computed-property-spacing:
+    options:
+      - never
+  ter-func-call-spacing:
+    options:
+      - never
+  ter-indent:
+    severity: error
+    options:
+      - 2
+      - VariableDeclarator:
+          var: 1
+          let: 1
+          const: 2
+        FunctionDeclaration:
+          parameters: first
+          body: 1
+        FunctionExpression:
+          parameters: first
+          body: 1
+        CallExpression:
+          arguments: first
+  ter-max-len:
+    options:
+      - 80
+      - 2
+      - ignoreComments: true
+        ignoreUrls: true
+        ignoreStrings: true
+        ignoreTemplateLiterals: true
+        ignoreRegExpLiterals: true
+  ter-newline-after-var: false
+  ter-no-irregular-whitespace: true
+  ter-no-mixed-spaces-and-tabs:
+    severity: error
+  # ter-no-proto: true
+  # ter-no-script-url: true
+  # ter-no-self-compare: true
+  ter-no-sparse-arrays: false
+  ter-no-tabs: error
+  ter-padded-blocks: false
+  ter-prefer-arrow-callback:
+    options:
+      - allowNamedFunctions: true
+        allowUnboundThis: true
+  chai-prefer-contains-to-index-of: true
+  no-single-line-block-comment: true
+  no-unnecessary-bind: true
+  no-unnecessary-field-initialization: true
+  no-unnecessary-local-variable: true
+  no-unnecessary-override: true
+  no-unnecessary-semicolons: true
+  no-useless-files: true
+  no-with-statement: true
+  prefer-array-literal: true
+  promise-must-complete: true
+  react-anchor-blank-noopener: error
+  react-iframe-missing-sandbox: error
+  react-tsx-curly-spacing:
+    severity: error
+    options:
+      - always
+      - allowMultiline: false
+  react-unused-props-and-state:
+    options:
+      - props-interface-regex: Props
+        state-interface-regex: State
+  use-named-parameter: true
+  jsx-alignment: true
+  jsx-boolean-value:
+    options:
+      - never
+  jsx-curly-spacing:
+    options:
+      - always
+  jsx-key: true
+  jsx-no-bind: false
+  jsx-no-lambda: false
+  jsx-no-multiline-js: false
+  jsx-no-string-ref: error
+  jsx-use-translation-function: false
+  jsx-self-close: true
+  jsx-wrap-multiline: true
+  early-exit: true
+  no-accessor-recursion: true
+  no-collapsible-if: true
+  no-else-after-return:
+    options:
+      - allow-else-if
+  no-return-undefined: true
+  no-static-this: true
+  no-unnecessary-else: true
+  no-unnecessary-type-annotation: true
+  no-unused:
+    options:
+      - unused-catch-binding
+  no-var-before-return: true
+  object-shorthand-properties-first: true
+  prefer-while: true
+  cognitive-complexity: true
+  mccabe-complexity: true
+  no-accessor-field-mismatch: true
+  no-all-duplicated-branches: true
+  no-array-delete: true
+  no-big-function: true
+  no-case-with-or: error
+  no-collection-size-mischeck: true
+  no-commented-code: true
+  no-dead-store: true
+  no-duplicate-string: true
+  no-duplicated-branches: true
+  no-element-overwrite: true
+  no-empty-destructuring: true
+  no-empty-nested-blocks: true
+  no-extra-semicolon: true
+  no-gratuitous-expressions: true
+  no-identical-conditions: true
+  no-identical-expressions: true
+  no-identical-functions: true
+  no-ignored-initial-value: true
+  no-ignored-return: true
+  no-misleading-array-reverse: true
+  no-misspelled-operator: true
+  no-multiline-string-literals: true
+  no-nested-incdec: true
+  no-redundant-boolean: true
+  no-redundant-parentheses: true
+  no-same-line-conditional: true
+  no-self-assignment: true
+  no-statements-same-line: true
+  no-unconditional-jump: true
+  no-unenclosed-multiline-block: true
+  no-unthrown-error: true
+  no-unused-array: true
+  no-use-of-empty-return-value: true
+  no-useless-cast: true
+  no-useless-increment: true
+  no-useless-intersection: true
+  no-variable-usage-before-declaration: true
+  parameters-max-number: true
+  prefer-immediate-return: true
+  use-primitive-type: true
+  use-type-alias: true

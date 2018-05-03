@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'Charlie';
+  font-style: normal;
+  font-weight: 100;
+  src: url('Charlie-Hairline.woff2') format('woff2'),
+       url('Charlie-Hairline.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charlie';
+  font-style: italic;
+  font-weight: 100;
+  src: url('Charlie-HairlineItalic.woff2') format('woff2'),
+       url('Charlie-HairlineItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charlie';
+  font-style: normal;
+  font-weight: 200;
+  src: url('Charlie-Thin.woff2') format('woff2'),
+       url('Charlie-Thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charlie';
+  font-style: italic;
+  font-weight: 200;
+  src: url('Charlie-ThinItalic.woff2') format('woff2'),
+       url('Charlie-ThinItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charlie';
+  font-style: normal;
+  font-weight: 300;
+  src: url('Charlie-Light.woff2') format('woff2'),
+       url('Charlie-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charlie';
+  font-style: italic;
+  font-weight: 300;
+  src: url('Charlie-LightItalic.woff2') format('woff2'),
+       url('Charlie-LightItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charlie';
+  font-style: normal;
+  font-weight: 400;
+  src: url('Charlie-Regular.woff2') format('woff2'),
+       url('Charlie-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charlie';
+  font-style: italic;
+  font-weight: 400;
+  src: url('Charlie-RegularItalic.woff2') format('woff2'),
+       url('Charlie-RegularItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charlie';
+  font-style: normal;
+  font-weight: 500;
+  src: url('Charlie-Medium.woff2') format('woff2'),
+       url('Charlie-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charlie';
+  font-style: italic;
+  font-weight: 500;
+  src: url('Charlie-MediumItalic.woff2') format('woff2'),
+       url('Charlie-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charlie';
+  font-style: normal;
+  font-weight: 600;
+  src: url('Charlie-Semibold.woff2') format('woff2'),
+       url('Charlie-Semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charlie';
+  font-style: italic;
+  font-weight: 600;
+  src: url('Charlie-SemiboldItalic.woff2') format('woff2'),
+       url('Charlie-SemiboldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charlie';
+  font-style: normal;
+  font-weight: 700;
+  src: url('Charlie-Bold.woff2') format('woff2'),
+       url('Charlie-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charlie';
+  font-style: italic;
+  font-weight: 700;
+  src: url('Charlie-BoldItalic.woff2') format('woff2'),
+       url('Charlie-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charlie';
+  font-style: normal;
+  font-weight: 800;
+  src: url('Charlie-Black.woff2') format('woff2'),
+       url('Charlie-Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charlie';
+  font-style: italic;
+  font-weight: 800;
+  src: url('Charlie-BlackItalic.woff2') format('woff2'),
+       url('Charlie-BlackItalic.woff') format('woff');
+}

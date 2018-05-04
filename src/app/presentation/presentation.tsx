@@ -1,7 +1,10 @@
+import {
+  Design,
+  Introduction,
+} from './slides'
 import createTheme from 'spectacle/lib/themes/default'
 import { Deck } from 'spectacle'
 import { hot } from 'react-hot-loader'
-import { Introduction } from './slides'
 import React from 'react'
 
 const theme = createTheme({
@@ -37,6 +40,11 @@ class Presentation extends React.PureComponent {
         <Introduction.ForDevelopers />
         <Introduction.PatternAndPrinciple />
         <Introduction.PatternBenefits />
+        <Design.Title />
+        <Design.UnitAndRatio />
+        <Design.GoldenSample />
+        <Design.GoldenArrangedSample />
+        <Design.TwelveColumns />
       </Deck>
     )
   }

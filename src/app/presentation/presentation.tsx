@@ -1,4 +1,5 @@
 import {
+  Build,
   Design,
   Introduction,
 } from './slides'
@@ -45,6 +46,13 @@ class Presentation extends React.PureComponent {
         <Design.GoldenSample />
         <Design.GoldenArrangedSample />
         <Design.TwelveColumns />
+        <Build.PuttingItTogether />
+        <Build.HTMLScaffolding />
+        <Build.CSSScaffolding />
+        <Build.GridBaseImage />
+        <Build.HTMLContent />
+        <Build.CSSContent />
+        <Build.ContentImage />
       </Deck>
     )
   }

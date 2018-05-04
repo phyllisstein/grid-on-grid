@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1.618fr 4.236fr 2.618fr;
+  grid-template-rows: auto;
+}
+
+.title {
+  grid-column: 2 / -1;
+}
+
+.meta {
+  grid-column: 2 / 3;
+}
+
+.body {
+  grid-column: 3 / 4;
+}
+
+.rail {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  grid-column: 4 / 5;
+  justify-content: space-between;
+}
+
+.rail > img {
+  height: auto;
+  margin: 1rem 0;
+  width: 85%;
+}

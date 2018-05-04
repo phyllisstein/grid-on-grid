@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1.618fr 4.236fr 2.618fr;
+  grid-template-rows: auto;
+}
+
+.left-margin {
+  grid-column: 1 / 2;
+}
+
+.meta {
+  grid-column: 2 / 3;
+}
+
+.content {
+  grid-column: 3 / 4;
+}
+
+.right-rail {
+  grid-column: 4 / 5;
+}

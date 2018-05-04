@@ -104,7 +104,7 @@ client.module
 
 client.module
   .rule('images')
-    .test(/\.(jpe?g|png|webp|ico)$/)
+    .test(/\.(gif|ico|jpe?g|png|webp)$/)
     .use('url')
       .loader('url-loader')
       .options({
@@ -121,12 +121,6 @@ client.module
     .use('css')
       .loader('css-loader')
 
-client.module
-  .rule('source')
-  .test(/assets\/code/)
-  .use('raw')
-    .loader('raw-loader')
-
 client.resolve
   .enforceExtension(false)
   .extensions
@@ -142,6 +136,7 @@ client.resolve
   .alias
     .set('react', 'vendor/react')
     .set('react-dom', 'vendor/react-dom')
+    .set('spectacle', 'vendor/spectacle')
 
 client
   .plugin('provide')

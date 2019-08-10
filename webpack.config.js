@@ -26,7 +26,6 @@ client.output
   .filename('js/[name].js')
   .path(path.resolve('dist/public'))
   .pathinfo(false)
-  .publicPath('/')
 
 client.module
   .rule('babel')

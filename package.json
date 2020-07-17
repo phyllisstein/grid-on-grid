@@ -65,7 +65,7 @@
   "dependencies": {
     "@babel/runtime": "^7.0.0-beta.46",
     "bluebird": "^3.5.1",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.19",
     "nodent-runtime": "^3.2.1",
     "normalize.css": "^8.0.0",
     "prismjs": "^1.14.0",
